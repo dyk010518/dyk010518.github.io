@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+		.Navbar {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			background: #333333;
+			height: 100px;
+			padding-right: 100px;
+		}
+
+		.Navbar-options {
+			display: flex;
+			font-family: 'Abril Fatface', cursive;
+			font-size: 20pt;
+			text-decoration: none;
+			color: white;
+			margin: 0 30px;
+		}
+
+        .Navbar-options:hover {
+			color: #888;
+			text-decoration-color: yellow;
+		}
+
+        .body {
+			margin: 0;
+			height: 100%;
+            display: flex;
+		}
+
+        .picture-Container {
+            margin: 3%;
+            padding: 2%;
+            border: 3px;
+            border-color: #333333;
+            display: flex;
+            width: 650px;
+        }
+
+        .text-container {
+            margin: 3%;
+            padding: 2%;
+            border: 3px;
+            width: 900px;
+                /* border-style: solid;
+                border-color: #999; */
+        }
+
+        .text-Name {
+            font-family: 'Rancho', cursive;
+            font-size: 70pt;
+            margin: 8px;
+        }
+
+        .text-Hashtags {
+            font-family: 'Rancho', cursive;
+            font-size: 22pt;
+            color: #777;
+            margin: 32px 0 0 10px;
+        }
+
+        .text-Description {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 16pt;
+            margin: 120px 0 0 10px;
+        }
+
+    </style>
+
+
+    <body style="margin: 0">
+        <div class="Navbar">
+            <a href="../index.html" style="text-decoration: none;"><span class="Navbar-options">Home</span></a>
+            <a href="./about.html" style="text-decoration: none;"><span style="text-decoration: underline" class="Navbar-options">About</span></a>
+            <a href="./projects.html" style="text-decoration: none;"><span class="Navbar-options">Projects</span></a>
+            <a href="./coursework.html" style="text-decoration: none;"><span class="Navbar-options">Coursework</span></a>
+        </div>
+
+        <div class="body">
+            <div class="picture-Container">
+                <div>
+                    <img src="../statics/images/headshot.jpg" style="width: 300px; height: 400px">
+                </div>
+                <div>
+                    <div style="height: 150px"></div>
+                    <img src="../statics/images/profile.jpg" style="width: 300px; height: 400px; margin-left: 50px;">
+                </div>
+            </div>
+
+            <div class="text-container">
+                <p class="text-Name"> Hey!&nbsp I'm <span style="color: #DDB138;">Daniel Kim</span></p>
+                <p class="text-Hashtags">#ClassOf2024 &nbsp #CS &nbsp #Finance</p>
+                <p class="text-Description">My name is Daniel Kim, and I am a rising sophomore at MIT double-majoring in CS and finance. I love working and programming for various prjects!</p>
+            </div>
+        </div>
+            
+    </body>
+
+</html>

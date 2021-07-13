@@ -4,6 +4,29 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 		
+		.Navbar {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			background: #333333;
+			height: 100px;
+			padding-right: 100px;
+		}
+    
+		.Navbar-options {
+			display: flex;
+			font-family: 'Abril Fatface', cursive;
+			font-size: 20pt;
+			text-decoration: none;
+			color: white;
+			margin: 0 30px;
+		}
+
+		.Navbar-options:hover {
+			color: #888;
+			text-decoration-color: yellow;
+		}
+
 		
 		.Name {
 			color: white;
@@ -22,6 +45,7 @@
 			font-family: 'Abril Fatface', cursive;
 			padding: 20px 0px 0px;
 			margin: 0;
+			margin-bottom: 20px;
 		}
 
 		.logoContainer {
@@ -36,7 +60,7 @@
 			margin: 0 -10px;
 		}
 
-		.Wow {
+		.body {
 			background-image: url('statics/images/background.gif');
 			margin: 0;
 			height: 100%;
@@ -47,7 +71,7 @@
 	</style>
 
 
-	<body class="Wow">
+	<body class="body">
 		<!-- <ul style="background-color: blue; text-align: right;">
 			<li>as</li>
 			<li>sd</li>
@@ -60,7 +84,13 @@
 			<img src="statics/images/headshot.jpg" style="width: 350px; height: 450px">
 		</div>	 -->
 
-
+		<div class="Navbar">
+			<a href="./index.html" style="text-decoration: none;"><span style="text-decoration: underline" class="Navbar-options">Home</span></a>
+			<a href="pages/about.html" style="text-decoration: none;"><span class="Navbar-options">About</span></a>
+			<a href="pages/projects.html" style="text-decoration: none;"><span class="Navbar-options">Projects</span></a>
+			<a href="pages/coursework.html" style="text-decoration: none;"><span class="Navbar-options">Coursework</span></a>
+		</div>
+		
 		<p class="Name">
 			Daniel Kim<br>(Dong Young)
 		</p>
@@ -68,6 +98,8 @@
 		<p class="Description">
 			CS & Finance @ MIT '24
 		</p>
+
+		<hr style="width: 650px; height: 4px; color: #DDB138; background-color: #DDB138; border-width: 0;">
 
 		<div class="logoContainer">
 			<a href="statics/files/Kim_Daniel_Resume.pdf" download=""><img src="statics/images/resume.png" class="logo"></a>
