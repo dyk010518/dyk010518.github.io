@@ -17,42 +17,167 @@
 
 
             <div class="semester1">
-                <div class="container1">
+                <div class="container1" onclick="function1_1()" onmouseover="function1_2()" onmouseout="function1_3()">
                     <span class="fall-2020">Fall 2020</span>
                     <span class="triangle-down1"></span>
                 </div>
-                <div class="coursework-1"></div>
+                <div class="coursework-1" id="coursework-1">
+                    <a> <span class="course">(6.042) Mathematics for Computer Science</span> </a>
+                    <a> <span class="course">(6.A01) Mens et Manus: Making with Technology</span> </a>
+                    <a> <span class="course">(8.01) Physics I</span> </a>
+                    <a> <span class="course">(14.73) The Challenge of World Poverty</span> </a>
+                    <a> <span class="course">(15.000) Explorations in Management</span> </a>
+                    <a> <span class="course">(18.02) Calculus</span> </a>
+                </div>
             </div>
 
             
             <div class="semester2">
-                <div class="coursework-2"></div>
-                <div class="container2">
+                <div class="container2" onclick="function2_1()" onmouseover="function2_2()" onmouseout="function2_3()">
                     <span class="triangle-up1"></span>
                     <span class="winter-2021">Winter 2021</span>
                 </div>
+                <div class="coursework-2" id="coursework-2">
+                    <a> <span class="course">(6.148) Web Lab: Programming & Competition</span> </a>
+                    <a> <span class="course">(6.906) StartMIT: Workshop</span> </a>
+                </div>
+
             </div>
 
             <div class="semester3">
-                <div class="container3">
+                <div class="container3" onclick="function3_1()" onmouseover="function3_2()" onmouseout="function3_3()">
                     <span class="spring-2021">Spring 2021</span>
                     <span class="triangle-down2"></span>
                 </div>
-                <div class="coursework-3"></div>
+                <div class="coursework-3" id="coursework-3">
+                    <a> <span class="course">(6.006) Introduction to Algorithms</span> </a>
+                    <a> <span class="course">(14.01) Principles of Microeconomics</span> </a>
+                    <a> <span class="course">(15.401) Managerial Finance</span> </a>
+                    <a> <span class="course">(15.501) Corporate Financial Accounting</span> </a>
+                </div>
             </div>
 
             <div class="semester4">
-                <div class="coursework-4"></div>
-                <div class="container4">
+                <div class="container4" onclick="function4_1()" onmouseover="function4_2()" onmouseout="function4_3()">
                     <span class="triangle-up2"></span>
                     <span class="fall-2021">Fall 2021</span>
                 </div>
+                <div class="coursework-4" id="coursework-4">
+                    <a> <span class="course">(6.009) Fundamentals of Programming</span> </a>
+                    <a> <span class="course">(15.418) Laboratory: Corporate Finance</span> </a>
+                    <a> <span class="course">(18.06) Linear Algebra</span> </a>
+                    <a> <span class="course">(18.600) Probability & Random Variables</span> </a>
+                    <a> <span class="course">(21M.600) Introduction to Acting</span> </a>
+                </div>
+
             </div>
 
             <!-- <div class="coursrwork-container">
 
             </div> -->
+
         </div>
+        <script>
+            function function1_1() {
+                var x = document.getElementById("coursework-1");
+                if (x.style.display === "inline-block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "inline-block";
+                }
+            }
+
+            function function1_2() {
+                var x = document.getElementById("coursework-1");
+                if (x.style.display === "inline-block") {
+                    null;
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+            function function1_3() {
+                var x = document.getElementById("coursework-1");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                }
+            }
+
+            function function2_1() {
+                var x = document.getElementById("coursework-2");
+                if (x.style.display === "inline-block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "inline-block";
+                }
+            }
+
+            function function2_2() {
+                var x = document.getElementById("coursework-2");
+                if (x.style.display === "inline-block") {
+                    null;
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+            function function2_3() {
+                var x = document.getElementById("coursework-2");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                }
+            }
+
+            function function3_1() {
+                var x = document.getElementById("coursework-3");
+                if (x.style.display === "inline-block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "inline-block";
+                }
+            }
+
+            function function3_2() {
+                var x = document.getElementById("coursework-3");
+                if (x.style.display === "inline-block") {
+                    null;
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+            function function3_3() {
+                var x = document.getElementById("coursework-3");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                }
+            }
+
+            function function4_1() {
+                var x = document.getElementById("coursework-4");
+                if (x.style.display === "inline-block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "inline-block";
+                }
+            }
+
+            function function4_2() {
+                var x = document.getElementById("coursework-4");
+                if (x.style.display === "inline-block") {
+                    null;
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+            function function4_3() {
+                var x = document.getElementById("coursework-4");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                }
+            }
+        </script>
     </body>
         
 </html>
