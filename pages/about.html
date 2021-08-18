@@ -11,8 +11,8 @@
 			align-items: center;
 			justify-content: flex-end;
 			background: #333333;
-			height: 100px;
-			padding-right: 100px;
+            height: 6vw;
+	        padding-right: 5vw;
 		}
 
 		.Navbar-options {
@@ -21,12 +21,18 @@
 			font-size: 20pt;
 			text-decoration: none;
 			color: white;
-			margin: 0 30px;
+			margin: 0 1.5vw;
 		}
 
         .Navbar-options:hover {
 			color: #888;
 		}
+
+        @media (max-width: 1000px) {
+            .Navbar-options {
+                font-size: 2.5vw;
+            }
+        }
 
         .body {
 			margin: 0;
@@ -43,6 +49,16 @@
             width: 40%;
         }
 
+        .picture {
+            width: 300px;
+            height: 400px;
+            margin: 2vw;
+        }
+
+        .empty-top {
+            height: 10vw;
+        }
+
         .text-container {
             margin: 3%;
             padding: 2%;
@@ -54,21 +70,39 @@
 
         .text-Name {
             font-family: 'Rancho', cursive;
-            font-size: 70pt;
+            font-size: 67pt;
             margin: 8px;
         }
 
         .text-Hashtags {
             font-family: 'Rancho', cursive;
-            font-size: 22pt;
+            font-size: 24pt;
             color: #777;
-            margin: 32px 0 0 10px;
+            margin: 40px 0 0 10px;
         }
 
         .text-Description {
             font-family: 'Abril Fatface', cursive;
             font-size: 16pt;
-            margin: 120px 0 0 10px;
+            margin: 80px 0 0 10px;
+        }
+
+        @media (max-width: 1620px) {
+            .picture {
+                width: 20vw;
+                height: 27vw;
+            }
+            .text-Name {
+                font-size: 5.5vw;
+            }
+            .text-Hashtags {
+                font-size: 2vw;
+                margin: 3vw 0 0 10px;
+            }
+            .text-Description {
+                font-size: 1.4vw;
+                margin: 5vw 0 0 10px;
+            }
         }
 
     </style>
@@ -86,11 +120,11 @@
         <div class="body">
             <div class="picture-Container">
                 <div>
-                    <img src="../statics/images/headshot.jpg" style="width: 300px; height: 400px">
+                    <img src="../statics/images/headshot.jpg" class="picture">
                 </div>
                 <div>
-                    <div style="height: 150px"></div>
-                    <img src="../statics/images/profile.jpg" style="width: 300px; height: 400px; margin-left: 50px;">
+                    <div class="empty-top"></div>
+                    <img src="../statics/images/profile.jpg" class="picture">
                 </div>
             </div>
 

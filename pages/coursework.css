@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: flex-end;
     background: #333333;
-    height: 100px;
-    padding-right: 100px;
+	height: 105px;
+	padding-right: 5vw;
 }
 
 .Navbar-options {
@@ -146,7 +146,14 @@
     color: #333;
     font-family: 'Abril Fatface', cursive;
     font-size: 20pt;
+    white-space: nowrap;
     /* position: fixed; */
+}
+
+@media (max-width: 900px) {
+    .fall-2020, .winter-2021, .spring-2021, .fall-2021 {
+        font-size: 16pt;
+    }
 }
 
 .container2:hover > .triangle-up1, .container4:hover > .triangle-up2 {
@@ -170,5 +177,17 @@
     color: #999;
     text-decoration: none;
     margin: 0 5%;
+}
+
+@media (max-width: 1400px) {
+    .course {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 1100px) {
+    .course {
+        font-size: 10pt;
+    }
 }
 

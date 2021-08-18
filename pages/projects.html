@@ -1,42 +1,9 @@
 <!DOCTYPE html>
 
+<link rel="stylesheet" type="text/css" href="projects.css" />
+
+
 <html lang="en">
-    <style>
-		@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
-        .Navbar {
-			display: flex;
-			align-items: center;
-			justify-content: flex-end;
-			background: #333333;
-			height: 100px;
-			padding-right: 100px;
-		}
-
-		.Navbar-options {
-			display: flex;
-			font-family: 'Abril Fatface', cursive;
-			font-size: 20pt;
-			text-decoration: none;
-			color: white;
-			margin: 0 30px;
-		}
-
-        .Navbar-options:hover {
-			color: #888;
-		}
-
-        .body {
-			margin: 0;
-			height: 100%;
-            display: flex;
-		}
-
-        .projects-container {
-            display: flex;
-            width: px;
-        }
-    </style>
 
     <head><link rel="icon" href="../statics/images/seniorpic.jpg"></head>
         
@@ -50,7 +17,31 @@
 
         <div class="body">
             <div class="projects-container">
-                hellosd
+                <div class="project">
+                    <img src="../statics/images/dropbox.png" class="project-picture1">
+                    <div class="description-container">
+                        <p class="project-title">Dropbox, Inc. (DBX) Stock Pitch</p>
+                        <p class="project-description">
+                            As an analyst of <a href="https://public.gps100.com/" target="_blank">Global Platinum Securities (GPS)</a>, I delivered a pitch on Dropbox, Inc. (DBX) for the 2021 Summer Conference. For this pitch, I conducted
+                            both qualitative research on the business and quantitative research, such as price modeling through DCF analysis, to come up with a long
+                            recommendation price for Dropbox company.
+                        </p>
+                        <a href="../statics/files/DBX Pitch.pdf" download="" class="project-link">DBX Pitch Deck</a>
+                        <a href="../statics/files/DBX RPM & DCF Model.xlsx" download="" class="project-link">RPM & DCF Model</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../statics/images/wallstreet.jpeg" class="project-picture2">
+                    <div class="description-container">
+                        <p class="project-title">Simple Stocks Simulator</p>
+                        <p class="project-description">
+                            While taking the course <a href="https://weblab.mit.edu/" target="_blank">MIT Web.lab</a> in the winter 2021, my team and I created a simple stock market simulator for the beginners. Using real historical market
+                            data, we designed a simulating stock market to help investors learn about quantitative analysis. ReactJS, Node, and MongoDB were mainly utilized throughout the project.
+                        </p>
+                        <a href="http://simplestocksimulator.herokuapp.com/" target="_blank" class="project-link">Stock Simulator</a>
+                        <a href="https://github.com/dyk010518/stockSimulator" target="_blank" class="project-link">Project GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
