@@ -6,8 +6,8 @@
     align-items: center;
     justify-content: flex-end;
     background: #333333;
-    height: 6vw;
-    padding-right: 5vw;
+	height: 105px;
+	padding-right: 5vw;
 }
 
 .Navbar-options {
@@ -16,17 +16,11 @@
     font-size: 20pt;
     text-decoration: none;
     color: white;
-    margin: 0 1.5vw;
+    margin: 0 30px;
 }
 
 .Navbar-options:hover {
     color: #888;
-}
-
-@media (max-width: 1000px) {
-    .Navbar-options {
-        font-size: 2.5vw;
-    }
 }
 
 .body {
